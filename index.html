@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Riya Mehta</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Mehta Portfolio</title>
+
+    <!-- Bootstrap & Fonts -->
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/hearts.png" type="image/x-icon" />
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
@@ -21,114 +26,131 @@
         <link rel="stylesheet" href="css/services.css">
 
     </head>
-
     <body>
+    <div class="header">
+        <img class="port" src="img/myphoto.jpeg" alt="Profile">
+        <h1>Riya Mehta</h1>
+        <p>Web Developer | ML Enthusiast</p>
+        <div class="icon-row">
+            <a href="https://github.com/21-ri"><i class="fa fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UCoXu9qyuPBVsBDLr-6SK8CA"><i class="fa fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/riya-mehtap"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
 
-        <div class="header">
-            <div class="fixed-content">
-                <img class="port" src="img/img1.JPG">
-                <h2>Riya Mehta</h2>
-                <p style="color:#fff;">Web Developer | ML Enthusiast</p>
-                <div class="icon-row">
-                    <a href="https://github.com/21-ri"><i class="fa fa-github"></i></a>
-                    <a href="https://www.youtube.com/channel/UCoXu9qyuPBVsBDLr-6SK8CA"><i class="fa fa-medium"></i></a>
-                    <a href="https://www.linkedin.com/in/riya-mehtap"><i class="fa fa-linkedin"></i></a>
-                    
-                </div>
+    <div class="content">
+        <h2>Summary</h2>
+        <p>
+            I am Riya Mehta, a dynamic and detail-oriented Front-End Developer based in London, UK, with over five years
+            of experience in designing, developing, and optimizing software solutions. My expertise lies in creating
+            cutting-edge, pixel-perfect, and visually stunning interfaces while ensuring seamless and intuitive user
+            experiences (UX).Further, I am keen towards the Data Science field.
+        </p>
+    </div>
+
+    <section class="colorlib-about" data-section="about">
+        <div class="container">
+            <div class="row">
+                <script type="text/javascript">
+                    var domains = ["Web Development", "Course Solutions", "Code Snippets", "Machine Learning"];
+                    var icons = ["desktop", "key", "code", "university"];
+                    var urls = ["web_projects/index.html", "web_projects/index2.html", "web_projects/index3.html",
+                        "web_projects/index4.html"
+                    ];
+                    var ids = [3, 4, 2, 1];
+                    for (let i = 0; i < domains.length; i++) {
+                        var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
+                        document.write(
+                            '<div class="col-sm-3 animate-box" data-animate-effect="fadeIn' + dir + '">\
+                          <a href="' + urls[i] + '" >\
+                            <div class="services color-' + ids[i] + '">\
+                              <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
+                              <h3>' + domains[i] + '</h3>\
+                            </div>\
+                          </a>\
+                        </div>'
+                        );
+                    }
+
+                </script>
             </div>
         </div>
-        <div class="second">
-            <div class="fixed-content">
-                <h1>Summary</h1>
-                <p>My name is Riya Mehta,I'm front-end developer in London,UK.
-			  I have developed many types of front-ends from well know DJ applications to E-commerce booking platforms.platforms.
-              I'm passionate about cutting-edge, pixel-perfecct, beautiful interfaces and intuitively implemented UX.
-.<br> Further, I'm keen towards the Data Science field.</p>
-            </div>
-        </div>
-
-        <section class="colorlib-about" data-section="about">
-            <div class="container">
-                <div class="row">
-                    <script type="text/javascript">
-                        var domains = ["Web Development", "Course Solutions", "Code Snippets", "Machine Learning"];
-                        var icons = ["desktop", "key", "code", "university"];
-                        var urls = ["web_projects/index.html", "web_projects/index2.html", "web_projects/index3.html",
-                            "web_projects/index4.html"
-                        ];
-                        var ids = [3, 4, 2, 1];
-                        for (let i = 0; i < domains.length; i++) {
-                            var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-                            document.write(
-                                '<div class="col-sm-3 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                              <a href="' + urls[i] + '" >\
-                                <div class="services color-' + ids[i] + '">\
-                                  <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                                  <h3>' + domains[i] + '</h3>\
-                                </div>\
-                              </a>\
-                            </div>'
-                            );
-                        }
-
-                    </script>
-                </div>
-            </div>
-        </section>
-
-        <br>
-        <br>
-
-        <section class="colorlib-skills" data-section="skills">
-            <div class="colorlib-narrow-content">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <h2>My Skills</h2>
-                        <hr>
-                    </div>
-                </div>
-                <p class="animate-box" data-animate-effect="fadeInLeft">Few of the skills that I consider myself
-                    acquainted with, to serve the given opportunity are showcased here.</p>
-                <div class="container">
-                    <div class="row">
-                        <script type="text/javascript">
-                            var skills = ["C", "Python", "Java", "HTML/CSS/Javascript", "PHP", "MySQL", "GitHub/Git",
-                                "Machine Learning"
-                            ];
-                            var value = [75, 85, 70, 80, 75, 70, 80, 65];
-                            for (let i = 0; i < skills.length; i++) {
-                                var dir = (i % 2 == 0) ? "Right" : "Left";
-                                document.write(
-                                    '<div class="col-md-6 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                                  <div class="progress-wrap">\
-                                      <h3>' + skills[i] + '</h3>\
-                                      <div class="progress">\
-                                          <div class="progress-bar color-' + (i + 1) +
-                                    '" role="progressbar" aria-valuenow="' + value[i] +
-                                    '" aria-valuemin="0" aria-valuemax="100" style="width:' + value[i] + '%">\
-                                              <span>' + value[i] + '%</span>\
-                                          </div>\
-                                      </div>\
+    </section>
+   
+    <section class="skills-call-container">
+        <!-- Skills Section -->
+        <div id="skills-section">
+          <h2>My Skills</h2>
+          <p class="animate-box" data-animate-effect="fadeInLeft">Few of the skills that I consider myself
+            acquainted with, to serve the given opportunity are showcased here.</p>
+        <div class="container">
+            <div class="row">
+                <script type="text/javascript">
+                    var skills = ["C", "Python", "Java", "HTML/CSS/Javascript", "PHP", "MySQL", "GitHub/Git",
+                        "Machine Learning"
+                    ];
+                    var value = [75, 85, 70, 80, 75, 70, 80, 65];
+                    for (let i = 0; i < skills.length; i++) {
+                        var dir = (i % 2 == 0) ? "Right" : "Left";
+                        document.write(
+                            '<div class="col-md-6 animate-box" data-animate-effect="fadeIn' + dir + '">\
+                          <div class="progress-wrap">\
+                              <h3>' + skills[i] + '</h3>\
+                              <div class="progress">\
+                                  <div class="progress-bar color-' + (i + 1) +
+                            '" role="progressbar" aria-valuenow="' + value[i] +
+                            '" aria-valuemin="0" aria-valuemax="100" style="width:' + value[i] + '%">\
+                                      <span>' + value[i] + '%</span>\
                                   </div>\
-                              </div>');
-                            }
+                              </div>\
+                          </div>\
+                      </div>');
+                    }
 
-                        </script>
-                    </div>
+                </script>
+            </div>
+        </div></div>
+          
+        <!-- Book a Call Section -->
+        <div id="book-call-section">
+          <h2>Book a Call with Me</h2>
+          <p>Want to discuss a project, collaboration, or just network? Schedule a call with me today!</p>
+          <form action="https://example.com/schedule" method="post" class="book-call-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="date" name="date" required>
+            <button type="submit">Book Now</button>
+          </form>
+        </div>
+      </section>
+      
+    
+    
+
+            <section id="work-experience" class="content">
+                <h2>Work Experience</h2>
+                <div class="experience-block">
+                    <h3>Software Developer, 11/2023 - 11/2024</h3>
+                    <h4>Pranic Evolutions - Greater London, United Kingdom</h4>
+                    <ul>
+                        <li>Checked software for errors and coded updates to fix problems.</li>
+                        <li>Wrote clean, clear, and well-tested code for various projects.</li>
+                        <li>Produced clean, error-free code in line with internal quality standards.</li>
+                        <li>Verified and resolved bug reports and issues.</li>
+                    </ul>
                 </div>
-        </section>
-
-        <br>
-        <br>
-
-        <section class="colorlib-experience" data-section="experience">
-            <div class="colorlib-narrow-content">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <h2>Work Experience</h2>
-                        <hr>
-                    </div>
+                <div class="experience-block">
+                    <h3>Software Developer, 10/2016 - 10/2021</h3>
+                    <h4>Mr. V Solutions - Anand, Gujarat, India</h4>
+                    <ul>
+                        <li>Created and documented maintenance procedures for developed software.</li>
+                        <li>Supported design and development phases with technical guidance on new features and improvements.</li>
+                        <li>Collaborated with cross-functional development teams to raise technical standards for ongoing projects.</li>
+                    </ul>
                 </div>
+            </section>
+
+
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -146,8 +168,7 @@
                                         "Project on developing eCommerce website using Wordpress.",
                                         "Online ticket booking system using html,css and javascript ."   
 										];
-									var urls = [ " https://github.com/21-ri/Spd-Sales--wordpress.gitss
-									"https://github.com/21-ri/OnlineThearteTicketSystem.git"
+									var urls = [ " https://github.com/21-ri/Spd-Sales--wordpress.gitss"https://github.com/21-ri/OnlineThearteTicketSystem.git"
 									      
 									];
                                     var iclass = ["code", "user"];
@@ -173,7 +194,7 @@
 
                                 </script>
                                 <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                    <div class="timeline-entry-inner">
+                                    
                                         <div class="timeline-icon color-3">
                                         </div>
                                     </div>
@@ -185,96 +206,124 @@
                 <div>
         </section>
 
-
-        <section class="colorlib-project" data-section="project">
-            <div class="colorlib-narrow-content">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <h2>Projects</h2>
-                        <hr>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <script type="text/javascript">
-                            var domains = ["Covid-19 Helpdesk",
-                                "A real time face recognition system",
-                                "A realtime Forecating",
-                                "ECommerce website development.",
-                                
-                            ];
-                            var ppDomains = [
-                                "Covid-19 helpdesk for tracking moderate and high risk patients around us along with online doctor portal.",
-                                "A real time face recognition system developed in Python using Pillow, OpenCV and NumPy",
-                                "Guided by Prof.Fateme Dinmohammadi ,Artificial Intelligence, University of west london , United Kingdom. It predict future events through a sequence of time . ",
-                                "It is a simple eCommerce website is based on PHP and MySQL with easy HTML5 and CSS3 for website rendering.",
-                                                           ];
-                            var urls = ["https://github.com/21-ri/covid19.git",
-                                "https://github.com/21-ri/Face-Recognition-using-Python.git",
-                                "https://github.com/21-ri/Time-Series-Forecasting-.git",
-                                "https://github.com/Parth-5858/secondhand_stuff.git",
-								
-                            ];
-                            var icons = ["ambulance", "camera", "user", "rupee"];
-                            for (let i = 0; i < domains.length; i++) {
-                                var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-                                document.write(
-                                    '<div class="col-md-12 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                              <a href="' + urls[i] + '" >\
-                                <div class="services color-' + (i + 1) + '">\
-                                  <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                                  <h3>' + domains[i] + '</h3>\
-                                  <p>' + ppDomains[i] + '</p>\
-                                </div>\
-                              </a>\
-                            </div>'
-                                );
-                            }
-
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+<div class="content">
+        <h2>Projects</h2>
        
-        <div class="footer">
-            <div class="second">
-                <div class="fixed-content">
-                    <h1>Contact Me</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-inner">
+                    <a href="https://github.com/21-ri/covid19.git" target="_blank" class="project-link">
+                    <div class="project-front">
+                        Covid-19 Helpdesk
+                    </div>
+                    <div class="project-back">
+                        <p>
+                            Helpdesk for tracking moderate and high-risk patients with an online doctor portal.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="fixed-content">
-                <div class="icon-row blue">
+        </a>
+
+            <div class="project-card">
+                <div class="project-inner">
+                    <a href="https://github.com/21-ri/Face-Recognition-using-Python.git" target="_blank" class="project-link">
+                    <div class="project-front">
+                        Face Recognition System
+                    </div>
+                    <div class="project-back">
+                        <p>
+                            Real-time face recognition using Python and OpenCV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <div class="project-card">
+                <div class="project-inner">
+                    <a href="https://github.com/21-ri/Time-Series-Forecasting-.git" target="_blank"  class="project-link">
+                
+                    <div class="project-front">
+                        A Real-Time Forecasting
+                    </div>
+                    <div class="project-back">
+                        <p>
+                            Guided by Prof. Fateme Dinmohammadi, Artificial Intelligence, University of West London, United Kingdom. It predicts future events through a sequence of time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <div class="project-card">
+                <div class="project-inner">
                     
-                    <a href="https://www.facebook.com/riy.mehta.5"><i class="fa fa-facebook"></i></a>
-                    <a href="mailto:riyamehta2095.rm@gmail.com"><i class="fa fa-envelope"></i></a>
-                            
+                    <a href="https://github.com/Parth-5858/secondhand_stuff.git",
+                    target="_blank" class="project-link">
+                    <div class="project-front">
+                        ECommerce Website Development
+                    </div>
+                    <div class="project-back">
+                        <p>
+                            A simple eCommerce website based on PHP and MySQL with easy HTML5 and CSS3 for rendering.
+                        </p>
+                    </div>
                 </div>
-                <p></p>
-                <i class="fa fa-chevron-up black" style="color:#000;"
-                    onclick="window.scroll({  top: 0,  left: 0,  behavior: 'smooth'});"></i>
             </div>
+        </a>
         </div>
 
+</div>
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.countTo.js"></script>
-        <script src="js/services.js"></script>
-        <script src="js/modernizr-2.6.2.min.js"></script>
-        <script src="js/script.js"></script>
 
-    </body>
+
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <h3>RM</h3>
+            <button id="close-chatbot">X</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="chatbot-text" placeholder="Type a message..." />
+            <button id="send-chatbot-message">Send</button>
+        </div>
+    </div>
+<div class="footer">
+    <div class="second">
+        <div class="fixed-content">
+            <h1>Contact Me</h1>
+        </div>
+    </div>
+    <div class="fixed-content">
+        <div class="icon-row blue">
+            
+            <a href="https://www.facebook.com/riy.mehta.5"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:riyamehta2095.rm@gmail.com"><i class="fa fa-envelope"></i></a>
+                    
+        </div>
+        <p></p>
+        <i class="fa fa-chevron-up black" style="color:#000;"
+            onclick="window.scroll({  top: 0,  left: 0,  behavior: 'smooth'});"></i>
+    </div>
+</div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/services.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="js/script.js"></script>
 
 </html>
+
+
