@@ -41,21 +41,16 @@ body
   animation: float 4s infinite ease-in-out; /* Floating animation */
 }
 /* Summary Section */
-
-.content p {
-  text-align: left;            /* Align text to the left for better readability */
-  margin: 20px 0;              /* Add spacing above and below the paragraph */
-  line-height: 2;              /* Increase line spacing for clarity */
-  font-size: 18px;             /* Slightly larger font size for better visibility */
-  letter-spacing: 0.5px;       /* Add slight spacing between letters */
-  word-spacing: 2px;           /* Add slight spacing between words */
-  color: #e0e0e0;              /* Softer text color for easier reading */
-  font-family: 'Arial', sans-serif; /* Use a clean and professional font */
+.content {
+    padding: 40px 20px;
+    background: #f9f9f9; /* Subtle background */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center; /* Center-align content */
+    max-width: 800px; /* Set max-width for readability */
+    margin: 40px auto; /* Center horizontally with spacing */
+    font-family: 'Quicksand', sans-serif;
 }
-
-
-
-
 /* Container for Skills and Book a Call Section */
 .skills-call-container {
   display: flex;                /* Use Flexbox to arrange items in a row */
