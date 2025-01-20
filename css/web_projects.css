@@ -8,6 +8,13 @@ a {
  -webkit-transition: .25s all;
  transition: .25s all;
 }
+.port {
+  border-radius: 50%; /* Retains a rounded look */
+  width: 200px;
+  height: 300px; /* Taller height for oval shape */
+  border: 5px solid #fff;
+  animation: rotateY 5s infinite linear; /* Add 3D rotation animation */
+}
 .card {
   padding-left:auto;
   padding-right:auto;
