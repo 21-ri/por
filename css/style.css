@@ -13,7 +13,7 @@ body
 /* Header Section */
 .header {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    padding: 10px 0;
+    padding: 40px 0;
     color: white;
     text-align: center;
     position: relative;
@@ -114,7 +114,22 @@ content {
 }
 
 /* Work Experience */
-/* TIMELINE STYLE */
+/* WORK EXPERIENCE CONTAINER */
+.experience-container {
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centers the container */
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-container:hover {
+    transform: translateY(-5px);
+}
+
+/* TIMELINE */
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -141,10 +156,10 @@ content {
 }
 
 .timeline-content {
-    background: white;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -152,6 +167,7 @@ content {
     transform: translateY(-5px);
 }
 
+/* TEXT STYLES */
 h3 {
     font-size: 1.4rem;
     font-weight: bold;
@@ -170,6 +186,7 @@ ul li {
     margin-bottom: 8px;
     line-height: 1.6;
 }
+
 /* web projects */
 .projects-container {
   display: flex;                  /* Arrange project cards in a row */
