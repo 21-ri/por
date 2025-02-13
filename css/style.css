@@ -188,44 +188,51 @@ ul li {
 }
 
 /* web projects */
-.projects-container {
-  display: flex;                  /* Arrange project cards in a row */
-  flex-wrap: nowrap;              /* Prevent wrapping of cards */
-  gap: 20px;                      /* Add spacing between cards */
-  justify-content: center;        /* Center the cards horizontally */
+/* Project Section with Slider */
+.projects-slider {
+    margin-top: 30px;
 }
 
 .project-card {
-  width: 250px;                   /* Set a fixed width for cards */
-  height: 300px;                  /* Set a fixed height for cards */
-  background-color: #fff;         /* Card background color */
-  border: 1px solid #cdcaca;         /* Light border around cards */
-  border-radius: 8px;             /* Slightly rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  overflow: hidden;               /* Hide overflowing content */
-  display: flex;                  /* Flex container for inner alignment */
-  flex-direction: column;         /* Align elements vertically */
-  justify-content: space-between; /* Space content vertically */
-  padding: 10px;                  /* Add padding inside the card */
-  text-align: center;
-  box-sizing: border-box;
-  text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-.project-front {
-  font-size: 18px;
-  font-weight: bold;
-  color: #020000;
-  margin-bottom: 10px;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
-.project-back {
-  font-size: 15px;
-  color: #040000;
+.project-content h4 {
+    color: #007bff;
+    font-size: 1.3rem;
 }
 
-.project-back p {
-  margin: 0;
+.project-content p {
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background: #1e1e1e;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.email:hover {
+    color: #ff6f61;
 }
 #resume 
 .resume-section {
@@ -279,95 +286,7 @@ ul li {
   font-family: 'Indie Flower', cursive;
   width:100%;
 }
-.footer {
-  color: #666;
-}
-.footer .blue i {
-  color: #d2d6dc;
-}
-.footer .blue i:hover {
-  background: #3c7fc6;
-  color: #d2d6dc;
-}
-.footer .fa-chevron-up {
-  cursor: pointer;
-  font-size: 34px;
-  margin: 40px 0 0 0;
-  position: relative;
-  top: 0px;
-}
-.footer .fa-chevron-up:hover {
-  -webkit-animation: up 1s infinite;
-  /* Chrome, Safari, Opera */
-  animation: up 1s infinite;
-}
-/* Chatbot Section */
-#chatbot-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  display: none; /* Initially hidden */
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-}
 
-#chatbot-header {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#chatbot-header h3 {
-  margin: 0;
-  font-size: 16px;
-}
-
-#chatbot-header #close-chatbot {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#chatbot-messages {
-  padding: 10px;
-  height: 200px;
-  overflow-y: auto;
-  background-color: #f1f1f1;
-}
-
-#chatbot-input {
-  display: flex;
-  border-top: 1px solid #ddd;
-}
-
-#chatbot-input input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-right: 1px solid #ddd;
-}
-
-#chatbot-input button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-#chatbot-input button:hover {
-  background-color: #0056b3;
-}
 
 /* Animations */
 @keyframes rotateY {
