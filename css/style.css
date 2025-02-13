@@ -84,15 +84,6 @@ content {
     font-family: 'Quicksand', sans-serif;
 } 
 
-/* Container for Skills and Book a Call Section */
-.skills-call-container {
-  display: flex;                /* Use Flexbox to arrange items in a row */
-  justify-content: space-between; /* Add space between Skills and Book a Call */
-  align-items: flex-start;      /* Align the top edges of both sections */
-  flex-wrap: wrap;              /* Wrap content on smaller screens */
-  gap: 20px;                    /* Add spacing between the two sections */
-  margin: 50px 0;               /* Add vertical margin */
-}
 
 /* Skills Section */
 #skills-section {
@@ -122,107 +113,64 @@ content {
   color: #ddd;
 }
 
-/* Book a Call Section */
-#book-call-section {
-  flex: 1;                      /* Flex item to take equal space */
-  background-color: #222;       /* Background color for the Book a Call section */
-  padding: 20px;                /* Inner padding */
-  border-radius: 10px;          /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  color: #fff;                  /* Text color */
-  max-width: 48%;               /* Set max width for better alignment */
-}
-
-#book-call-section h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-#book-call-section p {
-  text-align: center;
-  font-size: 16px;
-  color: #bbb;
-  margin-bottom: 20px;
-}
-
-.book-call-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.book-call-form input,
-.book-call-form button {
-  width: 50%;  
-  padding : 10px;                 /* Input and button width */
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-}
-
-.book-call-form button {
-  gap : 30px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.book-call-form button:hover {
-  background-color: #0056b3;
-}
-
 /* Work Experience */
-#work-experience {
-  margin: 50px 0;
-  text-align: center;
+/* TIMELINE STYLE */
+.timeline {
+    position: relative;
+    padding: 20px 0;
 }
 
-.experience-block {
-  background-color: #222;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  color: #fff;
-  max-width: 80%;
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.experience-block h3 {
-  font-size: 20px;
-  color: #007bff;
-  margin-bottom: 10px;
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 20px;
 }
 
-.experience-block h4 {
-  font-size: 16px;
-  color: #ccc;
-  margin-bottom: 10px;
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.experience-block ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #fff;
+.timeline-content:hover {
+    transform: translateY(-5px);
 }
 
-.experience-block ul li {
-  margin: 10px 0;
-}
-/* Projects Section */
-.content {
-  padding: 20px;
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #333;
+h4 {
+    font-size: 1.1rem;
+    color: #555;
 }
 
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+/* web projects */
 .projects-container {
   display: flex;                  /* Arrange project cards in a row */
   flex-wrap: nowrap;              /* Prevent wrapping of cards */
