@@ -179,13 +179,14 @@ content {
     align-items: flex-start;
     margin-bottom: 30px;
     position: relative;
+    
 }
 
 .timeline-icon {
     width: 50px;
     height: 50px;
-    background: #007bff;
-    color: black;
+    background: #fffff ;
+    color: #00000 ;
     border-radius: 50%;
     display: flex;
     align-items: center;
