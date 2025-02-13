@@ -58,6 +58,7 @@ body
 .profile-img {
     width: 100px;
     height: 100px;
+    background : #00000;
     border-radius: 40%;
     border: 3px solid rgba(255, 255, 255, 0.5);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
