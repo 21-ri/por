@@ -46,35 +46,51 @@
     </p>
 </div>
 
-    <section class="colorlib-about" data-section="about">
-        <div class="container">
-            <div class="row">
-                <script type="text/javascript">
-                    var domains = ["Web Development", "Course Solutions", "Download Resume", "Machine Learning"];
-                    var icons = ["desktop", "key", "book", "university"];
-                    var urls = ["web_projects/index.html", "web_projects/index2.html", "web_projects/index3.html",
-                        "web_projects/index4.html"
-                    ];
-                    var ids = [3, 4, 2, 1];
-                    for (let i = 0; i < domains.length; i++) {
-                        var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
-                        document.write(
-                            '<div class="col-sm-3 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                          <a href="' + urls[i] + '" >\
-                            <div class="services color-' + ids[i] + '">\
-                              <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
-                              <h3>' + domains[i] + '</h3>\
-                            </div>\
-                          </a>\
-                        </div>'
-                        );
-                    }
-
-                </script>
+   <section class="colorlib-about py-5 bg-light" data-section="about">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            
+            <div class="col">
+                <a href="web_projects/index.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm p-4 border-0 service-box">
+                        <i class="fa fa-desktop fa-3x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Web Development</h4>
+                    </div>
+                </a>
             </div>
+
+            <div class="col">
+                <a href="web_projects/index2.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm p-4 border-0 service-box">
+                        <i class="fa fa-key fa-3x text-success mb-3"></i>
+                        <h4 class="fw-bold">Course Solutions</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="web_projects/index3.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm p-4 border-0 service-box">
+                        <i class="fa fa-book fa-3x text-danger mb-3"></i>
+                        <h4 class="fw-bold">Download Resume</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="web_projects/index4.html" class="text-decoration-none">
+                    <div class="card text-center shadow-sm p-4 border-0 service-box">
+                        <i class="fa fa-university fa-3x text-warning mb-3"></i>
+                        <h4 class="fw-bold">Machine Learning</h4>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    </section>
-   
+    </div>
+</section>
+
     <section class="skills-call-container">
         <!-- Skills Section -->
         <div id="skills-section">
