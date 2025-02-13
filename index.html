@@ -91,93 +91,40 @@
         </div>
     </div>
 </section>
-<section class="skills-call-container py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="mb-4">My Skills</h2>
-        <p class="text-muted">
-            Few of the skills that I consider myself acquainted with, to serve the given opportunity, are showcased below.
-        </p>
 
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="skill-box">
-                    <i class="fab fa-cuttlefish skill-icon"></i>
-                    <h4>C</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 75%;" data-value="75">75%</div>
-                    </div>
-                </div>
+    <section class="skills-call-container">
+        <!-- Skills Section -->
+        <div id="skills-section">
+          <h2>My Skills</h2>
+          <p class="animate-box" data-animate-effect="fadeInLeft">Few of the skills that I consider myself
+            acquainted with, to serve the given opportunity are showcased here.</p>
+        <div class="container">
+            <div class="row">
+                <script type="text/javascript">
+                    var skills = ["C", "Python", "Java", "HTML/CSS/Javascript", "PHP", "MySQL", "GitHub/Git",
+                        "Machine Learning"
+                    ];
+                    var value = [75, 85, 70, 80, 75, 70, 80, 65];
+                    for (let i = 0; i < skills.length; i++) {
+                        var dir = (i % 2 == 0) ? "Right" : "Left";
+                        document.write(
+                            '<div class="col-md-6 animate-box" data-animate-effect="fadeIn' + dir + '">\
+                          <div class="progress-wrap">\
+                              <h3>' + skills[i] + '</h3>\
+                              <div class="progress">\
+                                  <div class="progress-bar color-' + (i + 1) +
+                            '" role="progressbar" aria-valuenow="' + value[i] +
+                            '" aria-valuemin="0" aria-valuemax="100" style="width:' + value[i] + '%">\
+                                      <span>' + value[i] + '%</span>\
+                                  </div>\
+                              </div>\
+                          </div>\
+                      </div>');
+                    }
+
+                </script>
             </div>
-
-            <div class="col-md-6">
-                <div class="skill-box">
-                    <i class="fab fa-python skill-icon"></i>
-                    <h4>Python</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 85%;" data-value="85">85%</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="skill-box">
-                    <i class="fab fa-java skill-icon"></i>
-                    <h4>Java</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;" data-value="70">70%</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="skill-box">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h4>HTML/CSS/JavaScript</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;" data-value="80">80%</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="skill-box">
-                    <i class="fas fa-database skill-icon"></i>
-                    <h4>MySQL</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;" data-value="70">70%</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="skill-box">
-                    <i class="fab fa-github skill-icon"></i>
-                    <h4>GitHub/Git</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;" data-value="80">80%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    
-          
-        <!-- Book a Call Section -->
-        <div id="book-call-section">
-          <h2>Book a Call with Me</h2>
-          <p>Want to discuss a project, collaboration, or just network? Schedule a call with me today!</p>
-          <form action="https://example.com/schedule" method="post" class="book-call-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="date" name="date" required>
-            <button type="submit">Book Now</button>
-          </form>
-        </div>
-      </section>
-      
-    
+        </div></div>
     
 
             <section id="work-experience" class="content">
