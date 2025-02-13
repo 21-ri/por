@@ -3,7 +3,7 @@ body
 {
   margin: 0;
   font-family: Arial, sans-serif;
-  perspective: 3000px; /* Enables 3D perspective */
+  perspective: 300px; /* Enables 3D perspective */
   background: #000; /* Dark background */
   color: #fff;
   text-align: center;
