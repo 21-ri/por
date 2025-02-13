@@ -88,11 +88,11 @@ content {
 /* Skills Section */
 #skills-section {
   flex: 1;                      /* Flex item to take equal space */
-  background-color: #222;       /* Background color for the Skills section */
+  background-color: #ffffff;       /* Background color for the Skills section */
   padding: 20px;                /* Inner padding */
   border-radius: 10px;          /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  color: #fff;                  /* Text color */
+  color: #000000;                  /* Text color */
   max-width: 48%;               /* Set max width for better alignment */
   text-align: center;           /* Center-align text */
   margin-top: 50px
