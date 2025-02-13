@@ -12,34 +12,66 @@ body
 
 /* Header Section */
 .header {
-  text-align: center;
-  padding: 40px;
-  transform: rotateX(20deg); /* Tilts header in 3D */
-  transform-origin: top;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+/* PROFILE IMAGE */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.port {
-  border-radius: 50%; /* Retains a rounded look */
-  width: 200px;
-  height: 300px; /* Taller height for oval shape */
-  border: 5px solid #fff;
-  animation: rotateY 5s infinite linear; /* Add 3D rotation animation */
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
-.icon-row 
-{
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  text-align: center;
+/* NAME & TAGLINE */
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-.icon-row i {
-  text-align: center;
-  font-size: 50px;
-  color: #fff;;
-  cursor: pointer;
-  animation: float 4s infinite ease-in-out; /* Floating animation */
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 30px;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.github:hover {
+    color: #333;
+    transform: translateY(-5px);
+}
+
+.youtube:hover {
+    color: #ff0000;
+    transform: translateY(-5px);
+}
+
+.linkedin:hover {
+    color: #0077b5;
+    transform: translateY(-5px);
+}
+
+
 /* Summary Section */
 content {
     padding: 40px 20px;
