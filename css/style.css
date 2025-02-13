@@ -116,9 +116,9 @@ content {
 /* Work Experience */
 /* WORK EXPERIENCE CONTAINER */
 .experience-container {
-    max-width: 900px;
+    max-width: 500px;
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin: 0 auto; /* Centers the container */
