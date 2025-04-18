@@ -154,19 +154,30 @@ content {
 
 /* Work Experience */
 /* WORK EXPERIENCE CONTAINER */
+  
 .experience-container {
     max-width: 900px;
-    background: black;
+    background: #ffffff; /* changed to white background */
+    color: #000000; /* ensures text is black */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto;
     transition: transform 0.3s ease-in-out;
-  
+}
+.experience-container {
+    background: black;
+    color: white; /* keep text white by default */
+}
+.experience-container .timeline-content {
+    color: black; /* force black text where needed */
+    background-color: white; /* optional: makes content readable */
+    padding: 15px;
+    border-radius: 8px;
 }
 
-.experience-container:hover {
-    transform: translateY(-5px);
+
+
 }
 
 /* TIMELINE */
