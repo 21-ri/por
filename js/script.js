@@ -1,28 +1,34 @@
-$(document).ready(function(){
-  $('.fa-chevron-up').click(function () {
-        $('body').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
-    });
-});
-<script>
-    $(document).ready(function(){
-        $(".projects-slider").owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            responsive:{
-                0:{ items:1 },
-                600:{ items:2 },
-                1000:{ items:3 }
-            }
-        });
-    });
-</script>
+// Animate Skill Bars
 
-// inspired by 
-// https://dribbble.com/shots/920939-Portfolio-Redesign-2013-early-stage?list=searches&tag=portfolio&offset=22
+const progressBars = document.querySelectorAll(".progress-bar");
+
+window.addEventListener("scroll", () => {
+
+  progressBars.forEach((bar) => {
+
+    const position = bar.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if (position < screenPosition) {
+      bar.style.width = bar.getAttribute("data-width");
+    }
+
+  });
+
+});
+
+// Navbar Background on Scroll
+
+window.addEventListener("scroll", () => {
+
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.style.background = "#020617";
+  } else {
+    navbar.style.background = "rgba(15, 23, 42, 0.95)";
+  }
+
+});
+               
+           
