@@ -1,288 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riya Mehta Portfolio</title>
-	<!-- Bootstrap & Fonts -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="shortcut icon" href="https://logo.png" type="image/x-icon" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riya Mehta | Portfolio</title>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/flexslider.css">
-        <link rel="stylesheet" href="css/services.css">
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-    </head>
-    <body> <!-- Navigation Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Welcome</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certificates.html">Certificates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/21-ri/por/blob/main/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="header text-center">
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
-        <img class="profile-img" src="img/myphoto.jpeg" alt="Profile">
-        <h1 class="name">Riya Mehta</h1>
-        <p class="tagline">Web Developer | ML Enthusiast</p>
-        <div class="social-icons">
-            <a href="https://github.com/21-ri" class="icon github"><i class="fab fa-github"></i></a>
-            <a href="https://www.youtube.com/channel/UCoXu9qyuPBVsBDLr-6SK8CA" class="icon youtube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/riya-mehtap" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </div>
-</header>
- <div class="content container p-4 shadow-lg rounded">
-    <h2 class="section-title text-center mb-4"></h2>
-    <p class="summary-text text-muted fs-5">
-        Hello, I’m <strong class="text-dark">Riya Mehta</strong>, a <strong class="text-primary">Front-End Developer</strong> based in London, UK. I specialize in designing and developing 
-        <strong class="text-info">modern, high-performance front-end interfaces</strong> that are visually appealing and deliver seamless user experiences. From building feature-rich DJ applications 
-        to crafting efficient e-commerce booking platforms, I bring creativity, precision, and a user-first approach to every project.
-    </p>
-    <p class="summary-text text-muted fs-5">
-        With a passion for <strong class="text-success">Data Science</strong> and a drive to constantly expand my skill set, I strive to integrate innovative solutions with cutting-edge technologies. 
-        Whether you're looking for a responsive web app or a polished front-end interface, I’m ready to turn ideas into reality.
-    </p>
-</div>
+      <a class="navbar-brand" href="#">Riya Mehta</a>
 
-   <section class="colorlib-about py-5 bg-light" data-section="about">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero text-center">
     <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-            
-            <div class="col">
-                <a href="web_projects/index.html" class="text-decoration-none">
-                    <div class="card text-center shadow-sm p-4 border-0 service-box">
-                        <i class="fa fa-desktop fa-3x text-primary mb-3"></i>
-                        <h4 class="fw-bold">Web Development</h4>
-                    </div>
-                </a>
-            </div>
 
-            <div class="col">
-                <a href="web_projects/index2.html" class="text-decoration-none">
-                    <div class="card text-center shadow-sm p-4 border-0 service-box">
-                        <i class="fa fa-key fa-3x text-success mb-3"></i>
-                        <h4 class="fw-bold">Course Solutions</h4>
-                    </div>
-                </a>
-            </div>
+      <img src="img/myphoto.jpeg" alt="Profile" class="profile-img">
 
-            <div class="col">
-                <a href="web_projects/index3.html" class="text-decoration-none">
-                    <div class="card text-center shadow-sm p-4 border-0 service-box">
-                        <i class="fa fa-book fa-3x text-danger mb-3"></i>
-                        <h4 class="fw-bold">Download Resume</h4>
-                    </div>
-                </a>
-            </div>
+      <h1>Hi, I'm <span>Riya Mehta</span></h1>
 
-            <div class="col">
-                <a href="web_projects/index4.html" class="text-decoration-none">
-                    <div class="card text-center shadow-sm p-4 border-0 service-box">
-                        <i class="fa fa-university fa-3x text-warning mb-3"></i>
-                        <h4 class="fw-bold">Machine Learning</h4>
-                    </div>
-                </a>
-            </div>
+      <h4>Data Analyst • Web Developer • ML Enthusiast</h4>
 
-        </div>
+      <p>
+        I create modern web applications and data-driven solutions
+        with beautiful UI and powerful analytics.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+        </a>
+
+        <a href="resume.pdf" class="btn btn-outline-light">
+          Download Resume
+        </a>
+      </div>
+
+      <div class="social-icons mt-4">
+        <a href="https://github.com/21-ri">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="#">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
     </div>
-</section>
+  </section>
 
-    <section class="skills-call-container" class="text-center mb-4>
-        <!-- Skills Section -->
-        <div id="skills-section" >
-          <h2> My Skills </h2>
-          <p class="animate-box" data-animate-effect="fadeInLeft">Few of the skills that I consider myself
-            acquainted with, to serve the given opportunity are showcased here.</p>
-        <div class="container">
-            <div class="row">
-                <script type="text/javascript">
-                    var skills = ["C", "Python", "Java", "HTML/CSS/Javascript", "PHP", "MySQL", "GitHub/Git",
-                        "Machine Learning"
-                    ];
-                    var value = [75, 85, 70, 80, 75, 70, 80, 65];
-                    for (let i = 0; i < skills.length; i++) {
-                        var dir = (i % 2 == 0) ? "Right" : "Left";
-                        document.write(
-                            '<div class="col-md-6 animate-box" data-animate-effect="fadeIn' + dir + '">\
-                          <div class="progress-wrap">\
-                              <h3>' + skills[i] + '</h3>\
-                              <div class="progress">\
-                                  <div class="progress-bar color-' + (i + 1) +
-                            '" role="progressbar" aria-valuenow="' + value[i] +
-                            '" aria-valuemin="0" aria-valuemax="100" style="width:' + value[i] + '%">\
-                                      <span>' + value[i] + '%</span>\
-                                  </div>\
-                              </div>\
-                          </div>\
-                      </div>');
-                    }
-
-                </script>
-            </div>
-        </div></div>
-    
-<section id="work-experience" class="content py-5">
+  <!-- About -->
+  <section id="about">
     <div class="container">
-        <div class="experience-container">
-            <h2 class="text-center mb-4">Work Experience</h2>
 
-            <div class="timeline">
-                <!-- Job 1: Pranic Evolutions -->
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-code"></i></div>
-                    <div class="timeline-content">
-                        <h3>Junior Software Developer (Machine Learning)</h3>
-                        <h4>Pranic Evolutions - London, UK (11/2023 - 11/2024)</h4>
-                        <ul>
-                            <li>Built and deployed ML models for predictive analytics, improving accuracy by **25%**.</li>
-                            <li>Designed RESTful APIs to integrate ML models with web & mobile apps.</li>
-                            <li>Optimized data pipelines, reducing training time by 30%.</li>
-                            <li>Wrote clean, reusable code following industry best practices.</li>
-                            <li>Collaborated with teams to enhance application scalability.</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Professional Services</p>
+      </div>
 
-                <!-- Job 2: Mr. V Solutions -->
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
-                    <div class="timeline-content">
-                        <h3>Software Developer</h3>
-                        <h4>Mr. V Solutions - Anand, India (10/2016 - 10/2021)</h4>
-                        <ul>
-                            <li>Designed & implemented **new features**, boosting system performance by **20%**.</li>
-                            <li>Automated **software maintenance workflows**, reducing downtime by **15%**.</li>
-                            <li>Ensured **security compliance** in development processes.</li>
-                            <li>Provided **technical support** during project design & implementation.</li>
-                            <li>Resolved critical **bugs**, improving system reliability significantly.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="row g-4">
+
+        <div class="col-md-3">
+          <div class="about-card text-center">
+            <i class="fas fa-code"></i>
+            <h4>Web Development</h4>
+            <p>Responsive modern websites and web apps.</p>
+          </div>
         </div>
+
+        <div class="col-md-3">
+          <div class="about-card text-center">
+            <i class="fas fa-chart-line"></i>
+            <h4>Data Analytics</h4>
+            <p>Interactive dashboards and analytics solutions.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="about-card text-center">
+            <i class="fas fa-brain"></i>
+            <h4>Machine Learning</h4>
+            <p>ML models and predictive analysis applications.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="about-card text-center">
+            <i class="fas fa-database"></i>
+            <h4>Database</h4>
+            <p>Backend systems and database management.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
-</section>
+  </section>
 
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="timeline-centered">
-                                <script type="text/javascript">
-                                    var timeSpan = ["May 2018 - June 2018", "May 2019 - June 2019",
-                                        
-                                     ];
-                                    
-                                  
-                                    var internType = [ "Wordpress Project",
-                                        "Online Thearte Ticket System"
-                                    ];
-                                    var descriptions = [
-                                        "Project on developing eCommerce website using Wordpress.",
-                                        "Online ticket booking system using html,css and javascript ."   
-										];
-									var urls = [ " https://github.com/21-ri/Spd-Sales--wordpress.gitss"https://github.com/21-ri/OnlineThearteTicketSystem.git"
-									      
-									];
-                                    var iclass = ["code", "user"];
-                                    var color = [5, 1, 2];
-                                    for (let i = 0; i < AT.length; i++) {
-                                        var dir = (i % 2 == 0) ? "Right" : "Left";
-                                        document.write(
-                                            '<article class="timeline-entry animate-box" data-animate-effect="fadeIn' +
-                                            dir + '">\
-										<div class="timeline-entry-inner">\
-											<div class="timeline-icon color-' + color[i] + '">\
-												<i class="fa fa-' + iclass[i] + '"></i>\
-											</div>\
-											<div class="timeline-label">\
-												<h2><a href="#">' + AT[i] + '</a> <span>' + timeSpan[i] + '</span></h2>\
-												<p><strong><a href="#">' + internType[i] + '</a></strong>\
-													<br> ' + descriptions[i] + '</p>\
-												<p></p>\
-											</div>\
-										</div>\
-									</article>');
-                                    }
-
-                                </script>
-                                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                    
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-        </section>
-
-<!-- Projects Section with Slider -->
-<section id="projects" class="content py-5">
+  <!-- Skills -->
+  <section id="skills">
     <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="owl-carousel projects-slider">
-            <div class="project-card">
-                <a href="https://github.com/21-ri/covid19.git" target="_blank">
-                    <div class="project-content">
-                        <h4>Covid-19 Helpdesk</h4>
-                        <p>Helpdesk for tracking moderate and high-risk patients with an online doctor portal.</p>
-                    </div>
-                </a>
-            </div>
 
-            <div class="project-card">
-                <a href="https://github.com/21-ri/Face-Recognition-using-Python.git" target="_blank">
-                    <div class="project-content">
-                        <h4>Face Recognition System</h4>
-                        <p>Real-time face recognition using Python and OpenCV.</p>
-                    </div>
-                </a>
-            </div>
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>Technical Expertise</p>
+      </div>
 
-            <div class="project-card">
-                <a href="https://github.com/21-ri/Time-Series-Forecasting-.git" target="_blank">
-                    <div class="project-content">
-                        <h4>A Real-Time Forecasting</h4>
-                        <p>Predicts future events through time-series analysis.</p>
-                    </div>
-                </a>
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="skill-box">
+            <h6>HTML / CSS / JavaScript</h6>
+            <div class="progress">
+              <div class="progress-bar" data-width="95%"></div>
             </div>
+          </div>
+
+          <div class="skill-box">
+            <h6>Python</h6>
+            <div class="progress">
+              <div class="progress-bar" data-width="90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h6>Machine Learning</h6>
+            <div class="progress">
+              <div class="progress-bar" data-width="85%"></div>
+            </div>
+          </div>
+
         </div>
-    </div>
-</section>
-	   
 
-    </body>
-<!-- Modern Footer -->
-<footer class="footer bg-dark text-white text-center py-4">
+        <div class="col-md-6">
+
+          <div class="skill-box">
+            <h6>SQL / MySQL</h6>
+            <div class="progress">
+              <div class="progress-bar" data-width="88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h6>React & Bootstrap</h6>
+            <div class="progress">
+              <div class="progress-bar" data-width="92%"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h6>Git & GitHub</h6>
+            <div class="progress">
+              <div class="progress-bar" data-width="90%"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
     <div class="container">
-        <div class="social-icons mt-3">
-            <a href="https://www.facebook.com/riy.mehta.5" class="icon facebook"><i class="fab fa-facebook"></i></a>
-            <a href="mailto:riyamehta2095.rm@gmail.com" class="icon email"><i class="fas fa-envelope"></i></a>
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Featured Projects</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+              alt=""
+            />
+
+            <div class="project-content">
+              <h4>Covid-19 Helpdesk</h4>
+
+              <p>
+                Patient management and doctor portal system.
+              </p>
+
+              <a
+                href="https://github.com/21-ri/covid19.git"
+                class="btn btn-primary"
+              >
+                View Project
+              </a>
+            </div>
+
+          </div>
         </div>
-        <p class="mt-3">&copy; 2025 Riya Mehta | All Rights Reserved</p>
+
+        <div class="col-md-4">
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+              alt=""
+            />
+
+            <div class="project-content">
+              <h4>Face Recognition</h4>
+
+              <p>
+                Real-time face recognition using Python & OpenCV.
+              </p>
+
+              <a
+                href="https://github.com/21-ri/Face-Recognition-using-Python.git"
+                class="btn btn-primary"
+              >
+                View Project
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
+              alt=""
+            />
+
+            <div class="project-content">
+              <h4>Time Series Forecasting</h4>
+
+              <p>
+                Forecasting future trends using data analytics.
+              </p>
+
+              <a
+                href="https://github.com/21-ri/Time-Series-Forecasting-.git"
+                class="btn btn-primary"
+              >
+                View Project
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-</footer>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Experience</h2>
+        <p>Work History</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h4>Junior Software Developer</h4>
+          <p>Pranic Evolutions • London, UK</p>
+          <span>2023 - 2024</span>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Software Developer</h4>
+          <p>Mr. V Solutions • India</p>
+          <span>2016 - 2021</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Let's Work Together</p>
+      </div>
+
+      <div class="contact-box">
+
+        <form>
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+          />
+
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Your Email"
+          />
+
+          <textarea
+            rows="5"
+            class="form-control"
+            placeholder="Your Message"
+          ></textarea>
+
+          <button class="btn btn-primary">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Riya Mehta | Portfolio Website</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
 </html>
